@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+
+  <IIS_Features>
+    <ApplicationDevelopment>
+      <Feature>WebServer</Feature>
+      <Feature>WebServerRole</Feature>
+      <Feature>ApplicationDevelopment</Feature>
+      <Feature>NetFxExtensibility</Feature>
+      <Feature>ASP</Feature>
+      <Feature>ASPNET</Feature>
+      <Feature>ISAPIExtensions</Feature>
+      <Feature>ISAPIFilter</Feature>
+    </ApplicationDevelopment>
+    <CommonHttpFeatures>
+      <Feature>CommonHttpFeatures</Feature>
+      <Feature>DefaultDocument</Feature>
+      <Feature>DirectoryBrowsing</Feature>
+      <Feature>HttpErrors</Feature>
+      <Feature>HttpRedirect</Feature>
+      <Feature>StaticContent</Feature>
+    </CommonHttpFeatures>
+    <HealthAndDiagnostics>
+      <Feature>HealthAndDiagnostics</Feature>
+      <Feature>CustomLogging</Feature>
+      <Feature>HttpLogging</Feature>
+      <Feature>RequestMonitor</Feature>
+      <Feature>HttpTracing</Feature>
+    </HealthAndDiagnostics>
+    <Performance>
+      <Feature>Performance</Feature>
+      <Feature>HttpCompressionDynamic</Feature>
+    </Performance>
+    <Security>
+      <Feature>Security</Feature>
+      <Feature>BasicAuthentication</Feature>
+      <Feature>RequestFiltering</Feature>
+      <Feature>WindowsAuthentication</Feature>
+    </Security>
+  </IIS_Features>
+
+  <HostEntries>
+    <Sales>
+      <Hosts>
+        <IP>#Sales web</IP>
+        <IP>127.0.1.3 dev-godaddy.com</IP>
+        <IP>127.0.1.3 in.dev-godaddy.com</IP>
+        <IP>127.0.1.3 pk.dev-godaddy.com</IP>
+      </Hosts>
+    </Sales>
+
+    <MobileWeb>
+      <mSales>
+        <Hosts>
+          <IP>#Mobile Sales web</IP>
+          <IP>127.0.0.3  m.dev-godaddy.com</IP>
+          <IP>127.0.0.3  in.m.dev-godaddy.com</IP>
+          <IP>127.0.0.3  pk.m.dev-godaddy.com</IP>
+          <IP>127.0.0.8  m.dev-secureserver.net</IP>
+          <IP>127.0.0.13 dev.m.securepaynet-net.ide</IP>
+          <IP>127.0.0.18 dev.m.bluerazor-com.ide</IP>
+
+        </Hosts>
+      </mSales>
+      <mCart>
+        <Hosts>
+          <IP>#CART Host Entries</IP>
+          <IP>127.0.0.5  cart.m.dev-godaddy.com</IP>
+          <IP>127.0.0.10 cart.m.dev-secureserver.net</IP>
+          <IP>127.0.0.15 cart.dev.m.securepaynet-net.ide</IP>
+          <IP>127.0.0.20 cart.dev.m.bluerazor-com.ide</IP>
+        </Hosts>
+      </mCart>
+      <mIDP>
+        <Hosts>
+          <IP>#IDP Host Entries</IP>
+          <IP>127.0.0.4  idp.m.dev-godaddy.com</IP>
+          <IP>127.0.0.9  idp.m.dev-secureserver.net</IP>
+          <IP>127.0.0.14 idp.dev.m.securepaynet-net.ide</IP>
+          <IP>127.0.0.19 idp.dev.m.bluerazor-com.ide</IP>
+        </Hosts>
+      </mIDP>
+      <mResources>
+        <Hosts>
+          <IP>#Resources Host Entry</IP>
+          <IP>127.0.0.2  resources.m.dev-godaddy.com</IP>
+          <IP>127.0.0.7  resources.m.dev-secureserver.net</IP>
+          <IP>127.0.0.12 resources.dev.m.securepaynet-net.ide</IP>
+          <IP>127.0.0.17 resources.dev.m.bluerazor-com.ide</IP>
+        </Hosts>
+      </mResources>
+      <mMYA>
+        <Hosts>
+          <IP>#MYA Host Entries</IP>
+          <IP>127.0.0.6  mya.m.dev-godaddy.com</IP>
+          <IP>127.0.0.11 mya.m.dev-secureserver.net</IP>
+          <IP>127.0.0.16 mya.dev.m.securepaynet-net.ide</IP>
+          <IP>127.0.0.21 mya.dev.m.bluerazor-com.ide</IP>
+        </Hosts>
+      </mMYA>
+    </MobileWeb>
+    <VPN>
+      <SearchCall>
+        <IP>#service call for search</IP>
+        <IP>172.19.69.31 g1dwlep001.dc1.corp.gd</IP>
+        <IP>172.19.69.31 g1dwlep001</IP>
+        <IP>172.19.66.58 g1twlep001.dc1.corp.gd</IP>
+        <IP>172.19.66.58 g1twlep001</IP>
+      </SearchCall>
+      <SQL>
+        <IP>#sql for vpn</IP>
+        <IP>172.19.81.195 g1dwpsql001.dc1.corp.gd</IP>
+        <IP>172.19.81.195 g1dwpsql001</IP>
+        <IP>172.19.69.136 g1dwsql001.dc1.corp.gd</IP>
+        <IP>172.19.69.136 g1dwsql001</IP>
+      </SQL>
+    </VPN>
+  </HostEntries>
+
+  <HostSiteName>
+    <Sales>
+      <IP>127.0.1.3</IP>
+      <SiteName>dev-godaddy.com</SiteName>
+    </Sales>
+    <MobileSales>
+      <mSales>
+        <IP>127.0.0.3</IP>
+        <SiteName>m.dev-godaddy.com</SiteName>
+      </mSales>
+      <mCart>
+        <IP>127.0.0.5</IP>
+        <SiteName>cart.m.dev-godaddy.com</SiteName>
+      </mCart>
+      <mIDP>
+        <IP>127.0.0.4</IP>
+        <SiteName>idp.m.dev-godaddy.com</SiteName>
+      </mIDP>
+      <mResources>
+        <IP>127.0.0.2</IP>
+        <SiteName>resources.m.dev-godaddy.com</SiteName>
+      </mResources>
+      <mMYA>
+        <IP>127.0.0.6</IP>
+        <SiteName>mya.m.dev-godaddy.com</SiteName>
+      </mMYA>
+    </MobileSales>
+  </HostSiteName>
+
+  <AddSiteBinding>
+    <Sales>
+      <Binding>
+        <Website>dev-godaddy.com</Website>
+        <IP>127.0.1.3</IP>
+        <HostName>in.dev-godaddy.com</HostName>
+      </Binding>
+      <Binding>
+        <Website>dev-godaddy.com</Website>
+        <IP>127.0.1.3</IP>
+        <HostName>pk.dev-godaddy.com</HostName>
+      </Binding>
+    </Sales>
+    <mSales>
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.3</IP>
+        <HostName>in.m.dev-godaddy.com</HostName>
+      </Binding>
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.3</IP>
+        <HostName>pk.m.dev-godaddy.com</HostName>
+      </Binding>
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.8</IP>
+        <HostName>m.dev-secureserver.net</HostName>
+      </Binding>
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.13</IP>
+        <HostName>dev.m.securepaynet-net.ide</HostName>
+      </Binding>
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.18</IP>
+        <HostName>dev.m.bluerazor-com.ide</HostName>
+      </Binding>
+    </mSales>
+    <mCart>
+      <Binding>
+        <Website>cart.m.dev-godaddy.com</Website>
+        <IP>127.0.0.10</IP>
+        <HostName>cart.m.dev-secureserver.net</HostName>
+      </Binding>
+      <Binding>
+        <Website>cart.m.dev-godaddy.com</Website>
+        <IP>127.0.0.15</IP>
+        <HostName>cart.dev.m.securepaynet-net.ide</HostName>
+      </Binding>
+      <Binding>
+        <Website>cart.m.dev-godaddy.com</Website>
+        <IP>127.0.0.20</IP>
+        <HostName>cart.dev.m.bluerazor-com.ide</HostName>
+      </Binding>
+    </mCart>
+    <mIDP>
+      <Binding>
+        <Website>idp.m.dev-godaddy.com</Website>
+        <IP>127.0.0.9</IP>
+        <HostName>idp.m.dev-secureserver.net</HostName>
+      </Binding>
+      <Binding>
+        <Website>idp.m.dev-godaddy.com</Website>
+        <IP>127.0.0.14</IP>
+        <HostName>idp.dev.m.securepaynet-net.ide</HostName>
+      </Binding>
+      <Binding>
+        <Website>idp.m.dev-godaddy.com</Website>
+        <IP>127.0.0.19</IP>
+        <HostName>idp.dev.m.bluerazor-com.ide</HostName>
+      </Binding>
+    </mIDP>
+    <mResources>
+      <Binding>
+        <Website>resources.m.dev-godaddy.com</Website>
+        <IP>127.0.0.7</IP>
+        <HostName>resources.m.dev-secureserver.net</HostName>
+      </Binding>
+      <Binding>
+        <Website>resources.m.dev-godaddy.com</Website>
+        <IP>127.0.0.12</IP>
+        <HostName>resources.dev.m.securepaynet-net.ide</HostName>
+      </Binding>
+      <Binding>
+        <Website>resources.m.dev-godaddy.com</Website>
+        <IP>127.0.0.17</IP>
+        <HostName>resources.dev.m.bluerazor-com.ide</HostName>
+      </Binding>
+    </mResources>
+    <mMYA>
+      <Binding>
+        <Website>mya.m.dev-godaddy.com</Website>
+        <IP>127.0.0.11</IP>
+        <HostName>mya.m.dev-secureserver.net</HostName>
+      </Binding>
+      <Binding>
+        <Website>mya.m.dev-godaddy.com</Website>
+        <IP>127.0.0.16</IP>
+        <HostName>mya.dev.m.securepaynet-net.ide</HostName>
+      </Binding>
+      <Binding>
+        <Website>mya.m.dev-godaddy.com</Website>
+        <IP>127.0.0.21</IP>
+        <HostName>mya.dev.m.bluerazor-com.ide</HostName>
+      </Binding>
+    </mMYA>
+  </AddSiteBinding>
+
+  <IIS_Certs>
+    <Sales>
+      <Binding>
+        <Website>dev-godaddy.com</Website>
+        <IP>127.0.1.3</IP>
+        <HostName>dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Big Sites\dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>dev-godaddy.com</Website>
+        <IP>127.0.1.3</IP>
+        <HostName>in.dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Big Sites\dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>dev-godaddy.com</Website>
+        <IP>127.0.1.3</IP>
+        <HostName>pk.dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Big Sites\dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+    </Sales>
+    <mSales>     
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.3</IP>
+        <HostName>m.dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.3</IP>
+        <HostName>in.m.dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.3</IP>
+        <HostName>pk.m.dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.8</IP>
+        <HostName>m.dev-secureserver.net</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-secureserver.net.pfx</SSL_Cert>
+      </Binding>     
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.13</IP>
+        <HostName>dev.m.securepaynet-net.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\dev.m.securepaynet-net.ide.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>m.dev-godaddy.com</Website>
+        <IP>127.0.0.18</IP>
+        <HostName>dev.m.bluerazor-com.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\dev.m.bluerazor-com.ide.pfx</SSL_Cert>
+      </Binding>
+    </mSales>
+    <mCart>
+      <Binding>
+        <Website>cart.m.dev-godaddy.com</Website>
+        <IP>127.0.0.5</IP>
+        <HostName>cart.m.dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>cart.m.dev-godaddy.com</Website>
+        <IP>127.0.0.10</IP>
+        <HostName>cart.m.dev-secureserver.net</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-secureserver.net.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>cart.m.dev-godaddy.com</Website>
+        <IP>127.0.0.15</IP>
+        <HostName>cart.dev.m.securepaynet-net.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\cart.dev.m.securepaynet-net.ide.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>cart.m.dev-godaddy.com</Website>
+        <IP>127.0.0.20</IP>
+        <HostName>cart.dev.m.bluerazor-com.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\cart.dev.m.bluerazor-com.ide.pfx</SSL_Cert>
+      </Binding>
+    </mCart>
+    <mIDP>
+      <Binding>
+        <Website>idp.m.dev-godaddy.com</Website>
+        <IP>127.0.0.4</IP>
+        <HostName>idp.m.dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>idp.m.dev-godaddy.com</Website>
+        <IP>127.0.0.9</IP>
+        <HostName>idp.m.dev-secureserver.net</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-secureserver.net.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>idp.m.dev-godaddy.com</Website>
+        <IP>127.0.0.14</IP>
+        <HostName>idp.dev.m.securepaynet-net.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\idp.dev.m.securepaynet-net.ide.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>idp.m.dev-godaddy.com</Website>
+        <IP>127.0.0.19</IP>
+        <HostName>idp.dev.m.bluerazor-com.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\idp.dev.m.bluerazor-com.ide.pfx</SSL_Cert>
+      </Binding>
+    </mIDP>
+    <mResources>
+      <Binding>
+        <Website>resources.m.dev-godaddy.com</Website>
+        <IP>127.0.0.2</IP>
+        <HostName>resources.m.dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>resources.m.dev-godaddy.com</Website>
+        <IP>127.0.0.7</IP>
+        <HostName>resources.m.dev-secureserver.net</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-secureserver.net.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>resources.m.dev-godaddy.com</Website>
+        <IP>127.0.0.12</IP>
+        <HostName>resources.dev.m.securepaynet-net.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\dev.m.securepaynet-net.ide.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>resources.m.dev-godaddy.com</Website>
+        <IP>127.0.0.17</IP>
+        <HostName>resources.dev.m.bluerazor-com.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\dev.m.bluerazor-com.ide.pfx</SSL_Cert>
+      </Binding>
+    </mResources>
+    <mMYA>
+      <Binding>
+        <Website>mya.m.dev-godaddy.com</Website>
+        <IP>127.0.0.6</IP>
+        <HostName>mya.m.dev-godaddy.com</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-godaddy.com.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>mya.m.dev-godaddy.com</Website>
+        <IP>127.0.0.11</IP>
+        <HostName>mya.m.dev-secureserver.net</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\m.dev-secureserver.net.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>mya.m.dev-godaddy.com</Website>
+        <IP>127.0.0.16</IP>
+        <HostName>mya.dev.m.securepaynet-net.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\mya.dev.m.securepaynet-net.ide.pfx</SSL_Cert>
+      </Binding>
+      <Binding>
+        <Website>mya.m.dev-godaddy.com</Website>
+        <IP>127.0.0.21</IP>
+        <HostName>mya.dev.m.bluerazor-com.ide</HostName>
+        <SSL_Cert>I:\Delta\Developer\Setup\IIS-certs\Mobile Sites\mya.dev.m.bluerazor-com.ide.pfx</SSL_Cert>
+      </Binding>
+    </mMYA>
+  </IIS_Certs>
+
+</Configuration>
