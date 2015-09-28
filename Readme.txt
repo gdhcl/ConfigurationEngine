@@ -36,3 +36,4 @@ Step 7: Go to IIS change the physical path to appropriate physical /main/web loc
 <<<<<<< HEAD
 jatin remote
 
+bu neeta
