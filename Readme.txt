@@ -34,4 +34,3 @@ Step 6: Run the Utility as admin user.
 
 Step 7: Go to IIS change the physical path to appropriate physical /main/web local path for all the applications.
 jatin remote
-changed by neeta
